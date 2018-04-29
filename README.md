@@ -1,1 +1,1 @@
-# ERC20 Airdrop Ðapp (Decentralised Application) 
+# AED - Airdroplet ERC20 Ðapp (Decentralised Application) 
