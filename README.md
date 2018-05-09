@@ -1,5 +1,7 @@
 # Airdroplet ERC20 Ðapp (Decentralised Application) 
 
+![alt text](https://github.com/samgos/airdroplet-erc20-dapp/img.png)
+
 ## Installation
 
 * Unpack the .zip file
