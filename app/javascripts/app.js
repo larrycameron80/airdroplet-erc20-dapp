@@ -1,3 +1,4 @@
+// Import the page's CSS. Webpack will know what to do with it.
 import "../stylesheets/app.css";
 import * as fs from 'fs-web';
 
@@ -6,10 +7,9 @@ import { default as contract } from 'truffle-contract'
 
 import airdrop_artifacts from '../../build/contracts/Airdroplet.json'
 import ERC20_artifacts from '../../build/contracts/Token.json'
+
 var ERC20 = contract(ERC20_artifacts);
 var Airdrop = contract(airdrop_artifacts);
-
-// Enter the deployment address of Airdroplet.sol as a string variable for air_add
 
 var air_add = "0x1990c7c0a4a0833e830c2c06a7bd777603b85b37";
 var accounts;
@@ -31,8 +31,7 @@ window.App = {
       account = web3.eth.accounts[0];
       self.setStatus("Successfully connected to Metamask account: " + account,1);
       if(account == undefined){self.setStatus("Error connecting to Metamask account.",0);}
-      if(air_add == ""){self.setStatus("Please provide the Airdroplet deployment address in app/javascripts/app.js",0);}
-    
+
   },
 
   setStatus: function(message,y) {
@@ -76,11 +75,9 @@ window.App = {
       self.setStatus("Error getting ERC20 decimals; see log.",0);
     });
 
-
-    // Approve transferFrom() allowence
-
     var supply = 9999999999999 * Math.pow(10,decimals);
 
+    console.log(supply);
     ERC20.at(tokenadd).then(function(instance) {
       meta = instance;
       return meta.approve(air_add, supply, {from: account, gas: 6521975});
@@ -96,7 +93,7 @@ window.App = {
 
   },
 
-  loadArray: function(arr){x = 0;},
+  loadArray: function(arr){x = 0},
 
   checkAdd: function(sample,j) {
 
@@ -125,8 +122,6 @@ window.App = {
     var amount = document.getElementById("amount").value;
     var amount = parseInt(amount * Math.pow(10,decimals));
     var target = [];
-
-    // Max 2.5k address's per .txt file
 
       if(x == 0 && tarone.length != 0){target = tarone;}
       else if(x == 1 && tartwo.length != 0){target = tartwo;}
