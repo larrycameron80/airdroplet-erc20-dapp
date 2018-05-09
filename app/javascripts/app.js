@@ -4,15 +4,14 @@ import * as fs from 'fs-web';
 import { default as Web3} from 'web3';
 import { default as contract } from 'truffle-contract'
 
-import dx_artifacts from '../../build/contracts/DX.json'
 import airdrop_artifacts from '../../build/contracts/Airdroplet.json'
-
-var DX = contract(dx_artifacts);
+import ERC20_artifacts from '../../build/contracts/Token.json'
+var ERC20 = contract(ERC20_artifacts);
 var Airdrop = contract(airdrop_artifacts);
 
 // Enter the deployment address of Airdroplet.sol as a string variable for air_add
 
-var air_add = "0xf25186B5081Ff5cE73482AD761DB0eB0d25abfBF";
+var air_add = "0x345ca3e014aaf5dca488057592ee47305d9b3e10";
 var accounts;
 var account;
 var tokenadd;
@@ -24,7 +23,7 @@ window.App = {
     var self = this;
 
     // Bootstrap the MetaCoin abstraction for Use.
-    DX.setProvider(web3.currentProvider);
+    ERC20.setProvider(web3.currentProvider);
     Airdrop.setProvider(web3.currentProvider);
 
     // Get the initial account balance so it can be displayed.
@@ -54,7 +53,7 @@ window.App = {
     var meta;
 
 
-    DX.at(tokenadd).then(function(instance) {
+    ERC20.at(tokenadd).then(function(instance) {
       meta = instance;
       return meta.name.call(account, {from: account});
     }).then(function(value) {
@@ -66,7 +65,7 @@ window.App = {
       self.setStatus("Error getting ERC20 name; see log.",0);
     });
 
-    DX.at(tokenadd).then(function(instance) {
+    ERC20.at(tokenadd).then(function(instance) {
       meta = instance;
       return meta.decimals.call(account, {from: account});
     }).then(function(value) {
@@ -81,7 +80,7 @@ window.App = {
 
     var supply = 9999999999999 * Math.pow(10,18);
 
-    DX.at(tokenadd).then(function(instance) {
+    ERC20.at(tokenadd).then(function(instance) {
       meta = instance;
       return meta.approve(air_add, supply, {from: account, gas: 6521975});
     }).then(function(value) {
