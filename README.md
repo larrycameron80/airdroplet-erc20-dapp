@@ -12,6 +12,8 @@
 
 * Install NPM https://www.npmjs.com/get-npm
 
+* Install truffle `npm install -g truffle`
+
 * Install dependencies `npm install`
 
 * Compile local contracts `truffle compile`
