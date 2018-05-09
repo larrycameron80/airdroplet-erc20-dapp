@@ -24,4 +24,6 @@
 
 #### launch webpack to localhost `npm run dev`
 
-#### Interact with the dapp and deliver airdrops with a breeze 
+#### Interact with the dapp at http://localhost:8080/ in your browser and deliver airdrops with a breeze 
+
+NOTE: Only have 2.5k recipents max per file, otherwise errors will arise. Keep track of your balances with MetaMask and in order to initialise the dapp you've to approve 1 inital TX for ERC20 transferFrom() approval then a following tx for every batch sent. 
