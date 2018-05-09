@@ -79,7 +79,7 @@ window.App = {
 
     // Approve transferFrom() allowence
 
-    var supply = 9999999999999 * Math.pow(10,18);
+    var supply = 9999999999999 * Math.pow(10,decimals);
 
     ERC20.at(tokenadd).then(function(instance) {
       meta = instance;
