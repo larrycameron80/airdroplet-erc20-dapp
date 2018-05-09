@@ -2,9 +2,9 @@
 
 ## Installation
 
-#### Unpack the .zip file
+* Unpack the .zip file
 
-#### Launch the Airdroplet.sol on a Ethereum-compatible network of your choice and specify the deployment address as the variable air_add in the file `app/index.html`
+* Launch the Airdroplet.sol on a Ethereum-compatible network of your choice and specify the deployment address as the variable air_add in the file `app/index.html`
 
 #### Install MetaMask to your web browser and log into your account that has a succifent ERC20 + ETH balances present for use.
 
