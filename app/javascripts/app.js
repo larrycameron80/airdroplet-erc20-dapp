@@ -11,7 +11,7 @@ var Airdrop = contract(airdrop_artifacts);
 
 // Enter the deployment address of Airdroplet.sol as a string variable for air_add
 
-var air_add = "0x345ca3e014aaf5dca488057592ee47305d9b3e10";
+var air_add = "";
 var accounts;
 var account;
 var tokenadd;
@@ -31,7 +31,8 @@ window.App = {
       account = web3.eth.accounts[0];
       self.setStatus("Successfully connected to Metamask account: " + account,1);
       if(account == undefined){self.setStatus("Error connecting to Metamask account.",0);}
-
+      if(air_add == ""){self.setStatus("Please provide the Airdroplet deployment address in app/javascripts/app.js",0);}
+    
   },
 
   setStatus: function(message,y) {
