@@ -17,7 +17,7 @@ var accounts;
 var account;
 var tokenadd;
 var decimals;
-var x = 0;
+var x;
 
 window.App = {
   start: function() {
@@ -96,7 +96,7 @@ window.App = {
 
   },
 
-  loadArray: function(arr){},
+  loadArray: function(arr){x = 0;},
 
   checkAdd: function(sample,j) {
 
