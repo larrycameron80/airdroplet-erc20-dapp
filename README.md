@@ -10,6 +10,8 @@
 
 * Go the directory of the unpacked file in a console or terminal `cd airdroplet-erc20-dapp-master`
 
+* Install NPM https://www.npmjs.com/get-npm
+
 * Install dependencies `npm install`
 
 * Compile local contracts `truffle compile`
