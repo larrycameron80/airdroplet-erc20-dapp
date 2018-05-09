@@ -152,7 +152,7 @@ window.App = {
       console.log(target);
       console.log(amount);
       console.log(tokenadd);
-    Airdrop.deployed().then(function(instance) {
+    Airdrop.at(air_add).then(function(instance) {
       meta = instance;
       return meta.airdropExecute(tokenadd, target, amount, {from: account, gas: 6521975});
     }).then(function(value) {
