@@ -20,7 +20,7 @@
 
 * Create a new console tab in the same directory `CRTL + T or CMD + T`
 
-* launch webpack to localhost `npm run dev`
+* Launch webpack to localhost `npm run dev`
 
 * Interact with the dapp at http://localhost:8080/ on the main Ethereum Network via MetaMask in your browser and deliver airdrops with a breeze 
 
