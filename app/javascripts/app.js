@@ -11,7 +11,7 @@ var Airdrop = contract(airdrop_artifacts);
 
 // Enter the deployment address of Airdroplet.sol as a string variable for air_add
 
-var air_add = "";
+var air_add = "0x1990c7c0a4a0833e830c2c06a7bd777603b85b37";
 var accounts;
 var account;
 var tokenadd;
