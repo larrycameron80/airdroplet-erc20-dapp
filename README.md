@@ -38,5 +38,6 @@
 
 #### NOTE: Only have 2.5k recipents max per file, otherwise errors will arise. If loading a new text file press the reset button to change the batch number back to zero
 
-* *This is a open-source software and any donations are appreciated whether it is tokens or ETH alike*
+* *This is a open-source software and any donations are appreciated whether it is tokens or ETH alike, thank you.*
+
  *Address:* **0xDa9b84d6c1B69F52E4aB496845EE55CC84f7eD65**
