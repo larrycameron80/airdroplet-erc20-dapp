@@ -28,4 +28,13 @@
 
 * Interact with the dapp at http://localhost:8080/ on the main Ethereum Network via MetaMask in your browser and deliver airdrops with a breeze 
 
-#### NOTE: Only have 2.5k recipents max per file, otherwise errors will arise. Keep track of your balances with MetaMask and in order to initialise the dapp you've to approve 1 inital TX for ERC20 transferFrom() approval then a following tx for every batch sent
+* Enter the token contract address in the first text box and press the associated initialize button to the left, you will be queried with a tx for ERC20 approval this is required in order to give the contract permission to transfer your tokens to the choosen recipents
+
+* Load the .txt file with the target address's all seperated by a new line and choose an amount to distribute to each participant 
+
+* Press the airdrop button and choose a suitable gas fee
+
+#### NOTE: Only have 2.5k recipents max per file, otherwise errors will arise. If loading a new text file press the reset button to change the batch number back to zero. 
+
+This is a open-source software and any donations are appreciated tokens or ETH alike.
+Address: 0xDa9b84d6c1B69F52E4aB496845EE55CC84f7eD65
