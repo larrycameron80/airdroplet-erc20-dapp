@@ -1,6 +1,6 @@
 # Airdroplet ERC20 Ðapp (Decentralised Application) 
 
-**This dapp is revolved are making a tedious process into a much easier one, if you want to significantly want to compensate on gas fee's only use the dapp for airdropping to address's that have had a previous ETH balance greater than zero. 
+**This dapp is revolved are making a tedious process into a much easier one, if you want to significantly want to compensate on gas fee's only use the dapp for airdropping to address's that have had a previous ETH balance greater than zero** 
 
 ![alt text](https://github.com/samgos/airdroplet-erc20-dapp/blob/master/img.png)
 
@@ -36,7 +36,7 @@
 
 * Press the airdrop button and choose a suitable gas fee
 
-#### NOTE: Only have 2.5k recipents max per file, otherwise errors will arise. If loading a new text file press the reset button to change the batch number back to zero. 
+#### NOTE: Only have 2.5k recipents max per file, otherwise errors will arise. If loading a new text file press the reset button to change the batch number back to zero
 
-* *This is a open-source software and any donations are appreciated whether it is tokens or ETH alike.
-*  *Address: **0xDa9b84d6c1B69F52E4aB496845EE55CC84f7eD65
+* *This is a open-source software and any donations are appreciated whether it is tokens or ETH alike*
+ *Address:* **0xDa9b84d6c1B69F52E4aB496845EE55CC84f7eD65**
